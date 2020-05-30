@@ -1,0 +1,26 @@
+{% extends "blog/base.html" %}
+{% load bootstrap %}
+    {% block body %}
+       <div class="content-section">
+            <form method="POST" >
+                {% csrf_token%}
+                <fieldset class="form-group">
+                    <legend class="border-bottom md-4">
+                        Login
+                    </legend>
+                    {{ form|bootstrap}}
+                </fieldset>
+                <div class="form-group">
+                    <button class="btn btn-outline-info" type="submit">Login</button>
+                    <small class="texted-muted ml-2">
+                        <a href="{% url 'password_reset' %}">Forget Password ?</a>
+                    </small>
+                </div>
+            </form>
+           <div class="border-top pt-3">
+               <small class="text-muted">
+                   Need an Account? <a href="{% url 'register'%}" >Sign In Now</a>
+               </small>
+           </div>
+       </div>
+{% endblock%}
