@@ -41,7 +41,7 @@ google-pasta==0.1.8
 grpcio==1.27.1
 h5py==2.10.0
 html5lib==0.999999999
-httplib2==0.9.2
+httplib2==0.19.0
 idna==2.6
 importlib-metadata==1.5.2
 importlib-resources==1.4.0
