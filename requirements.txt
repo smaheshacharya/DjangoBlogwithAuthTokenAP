@@ -91,7 +91,7 @@ pandocfilters==1.4.2
 passlib==1.7.2
 pexpect==4.2.1
 pickleshare==0.7.4
-Pillow==5.1.0
+Pillow==8.3.2
 pipenv==2018.11.26
 prompt-toolkit==1.0.15
 protobuf==3.11.3
